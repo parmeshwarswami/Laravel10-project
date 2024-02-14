@@ -2,10 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Seo\SeoRegionController;
-use App\Http\Controllers\Seo\SeoCountryController;
-use App\Http\Controllers\Seo\SeoCityController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +16,7 @@ use App\Http\Controllers\Seo\SeoCityController;
 Route::get('/', function () {
     return view('Admin/dashboard');
 });
+echo "hii";
 
 Route::group(['prefix' => 'admin'], function () {
 
